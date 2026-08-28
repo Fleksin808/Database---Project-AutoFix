@@ -11,7 +11,7 @@ Projekt řeší návrh databázového modelu pro malou autodílnu. Databáze evi
 * create.sql – SQL skript pro vytvoření databázového schématu
 * insert.sql – SQL skript pro vložení testovacích dat
 * queries.sql – SQL dotazy pokrývající požadované kategorie
-* relational_algebra.pdf` – vybrané dotazy přepsané do relační algebry
+* relational_algebra.pdf – vybrané dotazy přepsané do relační algebry
 * ERD.png – konceptuální/databázové schéma
 * dokumentace.pdf – finální dokumentace projektu
 
