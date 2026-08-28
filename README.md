@@ -14,7 +14,6 @@ Projekt řeší návrh databázového modelu pro malou autodílnu. Databáze evi
 * relational_algebra.pdf` – vybrané dotazy přepsané do relační algebry
 * ERD.png – konceptuální/databázové schéma
 * dokumentace.pdf – finální dokumentace projektu
-* .gitignore – soubory ignorované Gitem
 
 ## Použité technologie
 
