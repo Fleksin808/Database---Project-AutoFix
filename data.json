@@ -1,0 +1,519 @@
+{
+  "entities": [
+    {
+      "name": "Dil",
+      "parent": null,
+      "attr": [
+        {
+          "name": "kod",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "min_ks",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "prodejni_cena",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "skladem_ks",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Faktura",
+      "parent": null,
+      "attr": [
+        {
+          "name": "cislo_faktury",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_vystaveni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "splatnost",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "stav_faktury",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Mechanik",
+      "parent": null,
+      "attr": [
+        {
+          "name": "osobni_cislo",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "jmeno",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "kvalifikace",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Odstavne_misto",
+      "parent": null,
+      "attr": [
+        {
+          "name": "oznaceni",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_do",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_od",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "dostupnost",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Platba",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_transakce",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "castka",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "stav_platby",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "zpusob_platby",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Servisni_stani",
+      "parent": null,
+      "attr": [
+        {
+          "name": "oznaceni",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "dostupnost",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Servisni_ukon",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_ukonu",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "hodinova_sazba",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "plan_hodin",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "popis",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "skutecnost_hodin",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "stav_ukonu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Vozidlo",
+      "parent": null,
+      "attr": [
+        {
+          "name": "vin",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "model",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "rok_vyroby",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "spz",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "znacka",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Zakazka",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_zakazky",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_prijeti",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "poznamka",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "stav_zakazky",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    },
+    {
+      "name": "Zakaznik",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_zakaznik",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "email",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "jmeno",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "prijmeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "telefon",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ]
+    }
+  ],
+  "relations": [
+    [
+      {
+        "entity": "Dil",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Servisni_ukon",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Faktura",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Zakazka",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Faktura",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null
+      },
+      {
+        "entity": "Platba",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Mechanik",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Servisni_ukon",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Odstavne_misto",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Vozidlo",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Servisni_stani",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Zakazka",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Servisni_ukon",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Zakazka",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Vozidlo",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      },
+      {
+        "entity": "Zakaznik",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null
+      }
+    ],
+    [
+      {
+        "entity": "Vozidlo",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null
+      },
+      {
+        "entity": "Zakazka",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null
+      }
+    ]
+  ],
+  "notes": []
+}
