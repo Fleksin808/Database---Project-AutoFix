@@ -13,6 +13,7 @@ Projekt řeší návrh databázového modelu pro malou autodílnu. Databáze evi
 * queries.sql – SQL dotazy pokrývající požadované kategorie
 * relational_algebra.pdf – vybrané dotazy přepsané do relační algebry
 * ERD.png – konceptuální/databázové schéma
+* ERD_data.json - JSON soubor evidující diagram v datech
 * dokumentace.pdf – finální dokumentace projektu
 
 ## Použité technologie
